@@ -3,12 +3,48 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/sleepgraph"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hours slept:.... Average sleep time .... Approximated REM sleep .. Start Time .... End Time..."
+        android:text="Hours slept:"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        />
+        android:textColor="@android:color/holo_blue_light"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Average sleep time:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_blue_light"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Approximated REM sleep: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Start Time: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_blue_light"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="220dp"
+        android:text="End Time:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_blue_light"/>
 
 </RelativeLayout>

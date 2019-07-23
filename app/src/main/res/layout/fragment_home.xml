@@ -2,13 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
     <TextView
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have slept for ___. Based on the amount of sleep you received. SleepApp advises that you..."
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Good Morning."
+        android:layout_marginLeft="75dp"
+        android:textSize="40dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have slept for ___ hours."
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="200dp"
+        android:text="Based on the amount of sleep you received. SleepApp advises that..."
+        android:textSize="40dp"
+        />
 </RelativeLayout>

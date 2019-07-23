@@ -2,13 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
     <TextView
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Start sleep timer...."
+        android:layout_marginLeft="120dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Chronometer
+        android:id="@+id/stopwatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start sleep timer...."
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        />
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="400sp"
+        android:textSize="30sp"/>
+
+    <ImageButton
+        android:id="@+id/sleep_button"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_marginTop="40dp"
+        android:onClick="startStopwatch"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/zzzz" />
+    />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="480sp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_red_light"
+        android:onClick="stopStopwatch"
+        android:text="Stop"/>
+    />
 
 </RelativeLayout>
