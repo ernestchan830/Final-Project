@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/navigation_sleep"
-        android:icon="@drawable/sleepgraph"
+        android:icon="@drawable/ic_brightness_3_black_24dp"
         android:title="@string/title_sleep" />
     <item
         android:id="@+id/navigation_notes"
