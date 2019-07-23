@@ -39,7 +39,6 @@
         android:scaleY="1.5"
         android:background="@android:color/black"
         android:textColor="@android:color/holo_red_light"
-        android:onClick="stopStopwatch"
         android:text="Stop"/>
     />
 
