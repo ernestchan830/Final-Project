@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView myImageView = (ImageView) findViewById(R.id.)
+//        ImageView myImageView = (ImageView) findViewById(R.id.);
+//        myImageView.setImageResources(R.drawable.android_background);
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
