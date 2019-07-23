@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SleepApp</string>
     <string name="title_home">Home</string>
-    <string name="title_records">Records</string>
-    <string name="title_track">Track</string>
-    <string name="title_you">You</string>
+    <string name="title_stats">Stats</string>
+    <string name="title_sleep">Sleep</string>
+    <string name="title_notes">Notes</string>
 </resources>
