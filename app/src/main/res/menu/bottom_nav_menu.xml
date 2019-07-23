@@ -7,16 +7,16 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_records"
+        android:id="@+id/navigation_stats"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_stats" />
 
     <item
-        android:id="@+id/navigation_track"
+        android:id="@+id/navigation_sleep"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_sleep" />
     <item
-        android:id="@+id/navigation_you"
+        android:id="@+id/navigation_notes"
         android:icon="@drawable/ic_border_color_black_24dp"
         android:title="@string/title_notes" />
 

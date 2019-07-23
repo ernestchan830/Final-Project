@@ -6,43 +6,65 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
     private TextView mTextMessage;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_records:
-                    mTextMessage.setText(R.string.title_records);
-                    return true;
-                case R.id.navigation_track:
-                    mTextMessage.setText(R.string.title_track);
-                    return true;
-                case R.id.navigation_you:
-                    mTextMessage.setText(R.string.title_you);
-                    return true;
-            }
-            return false;
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        ImageView myImageView = (ImageView) findViewById(R.id.)
+
+        BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(this);
+
+        loadFragment(new HomeFragment());
     }
 
+    private boolean loadFragment (Fragment fragment) {
+        if(fragment != null) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commit();
+
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        Fragment fragment = null;
+
+        switch(item.getItemId()) {
+            case R.id.navigation_home:
+                fragment = new HomeFragment();
+                break;
+
+            case R.id.navigation_stats:
+                fragment = new StatsFragment();
+                break;
+
+            case R.id.navigation_sleep:
+                fragment = new SleepFragment();
+                break;
+
+            case R.id.navigation_notes:
+                fragment = new NotesFragment();
+                break;
+        }
+
+        return loadFragment(fragment);
+    }
 }
