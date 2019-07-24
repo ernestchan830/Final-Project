@@ -21,9 +21,11 @@ public class SleepFragment extends Fragment implements View.OnClickListener {
     private boolean running;
     private long pauseOffset;
     private ImageButton mSleepButton;
+    private Button mStopButton;
 
 
-    public void startStopwatch(View v) {
+
+    public void startStopwatch() {
         if(!running)  {
             stopwatch.setBase(SystemClock.elapsedRealtime()- pauseOffset);
             stopwatch.start();
@@ -31,7 +33,7 @@ public class SleepFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    public void stopStopwatch(View v) {
+    public void stopStopwatch() {
         if (running) {
             stopwatch.stop();
             pauseOffset = SystemClock.elapsedRealtime() - stopwatch.getBase();
@@ -39,18 +41,26 @@ public class SleepFragment extends Fragment implements View.OnClickListener {
             pauseOffset = 0;
         }
     }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sleep, null);
         mSleepButton = (ImageButton) view.findViewById(R.id.sleep_button);
         mSleepButton.setOnClickListener(this);
-
+        mStopButton = (Button) view.findViewById(R.id.stop_button);
+        mStopButton.setOnClickListener(this);
+        stopwatch = view.findViewById(R.id.stopwatch);
         return view;
     }
 
     @Override
     public void onClick(View view) {
-
+        if (view.getId() == R.id.sleep_button) {
+            startStopwatch();
+        }
+        else if (view.getId() == R.id.stop_button) {
+            stopStopwatch();
+        }
     }
 }
