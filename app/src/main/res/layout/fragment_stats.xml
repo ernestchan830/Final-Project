@@ -13,22 +13,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hours slept: 12"
+        android:text="Hours slept: __"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_blue_light"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="Average time slept: 10"
+        android:text="Average time slept: __"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_blue_light"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
 
-        android:text="Approximated REM sleep: 4 hours"
+        android:text="Approximated REM sleep: __ hours"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_blue_light"/>
 
@@ -36,15 +38,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
-        android:text="Start Time:9:30 "
+        android:text="Start Time: __ : __ "
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_blue_light"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:layout_marginLeft="220dp"
-        android:text="End Time:8:30"
+        android:text="End Time: __ : __"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/holo_blue_light"/>
 
