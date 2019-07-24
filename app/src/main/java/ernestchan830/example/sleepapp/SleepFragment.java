@@ -17,25 +17,25 @@ import androidx.fragment.app.Fragment;
 
 public class SleepFragment extends Fragment implements View.OnClickListener {
 
-    private Chronometer stopwatch;
-    private boolean running;
+    private Chronometer chronometer;
     private long pauseOffset;
+    private boolean running;
     private ImageButton mSleepButton;
 
 
     public void startStopwatch(View v) {
         if(!running)  {
-            stopwatch.setBase(SystemClock.elapsedRealtime()- pauseOffset);
-            stopwatch.start();
+            chronometer.setBase(SystemClock.elapsedRealtime()- pauseOffset);
+            chronometer.start();
             running = true;
         }
     }
 
     public void stopStopwatch(View v) {
         if (running) {
-            stopwatch.stop();
-            pauseOffset = SystemClock.elapsedRealtime() - stopwatch.getBase();
-            stopwatch.setBase(SystemClock.elapsedRealtime());
+            chronometer.stop();
+            pauseOffset = SystemClock.elapsedRealtime() - chronometer.getBase();
+            chronometer.setBase(SystemClock.elapsedRealtime());
             pauseOffset = 0;
         }
     }
@@ -51,6 +51,6 @@ public class SleepFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
+    
     }
 }

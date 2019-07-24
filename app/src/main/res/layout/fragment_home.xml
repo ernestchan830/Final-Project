@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have slept for ___ hours."
+        android:text="You have slept for 12 hours."
         android:layout_marginTop="80dp"
         android:layout_marginLeft="7dp"
         android:textColor="#ffffff"
@@ -28,7 +28,7 @@
         android:layout_marginLeft="7dp"
         android:layout_marginTop="200dp"
         android:textColor="#ffffff"
-        android:text="Based on the amount of sleep you received. SleepApp advises that..."
+        android:text="Based on the amount of sleep you received. SleepApp advises that you keep it up!"
         android:textSize="40dp"
         />
 </RelativeLayout>

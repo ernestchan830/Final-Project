@@ -25,7 +25,8 @@
         android:layout_margin="4dp"
         android:layout_marginBottom="3dp"
         android:textSize="26sp"
-        android:text="Keep track of Sleep Trends Here!"
+        android:text="Notepad"
+        android:textColor="#ffffff"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:maxLines="3"
         />
@@ -38,7 +39,8 @@
          android:layout_marginLeft="5dp"
          android:layout_marginStart="12dp"
          android:textSize="22sp"
-         android:text="Date:"
+         android:textColor="#ffffff"
+         android:text="Date: 7/20/19"
          />
 <!--<view-->
     <!--android:layout_width="match_parent"-->

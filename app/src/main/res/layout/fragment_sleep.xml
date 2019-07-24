@@ -27,19 +27,17 @@
         android:scaleX="1"
         android:scaleY="1"
         android:src="@drawable/zzzz" />
-    />
 
     <Button
         android:id="@+id/stop_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="165dp"
-        android:layout_marginTop="480sp"
+        android:layout_marginTop="475sp"
         android:scaleX="1.5"
         android:scaleY="1.5"
         android:background="@android:color/black"
         android:textColor="@android:color/holo_red_light"
         android:text="Stop"/>
-    />
 
 </RelativeLayout>
